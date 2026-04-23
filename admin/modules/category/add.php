@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-// Lùi 2 cấp để gọi file kết nối Database của dự án
+// Lùi 3 cấp để gọi file kết nối Database của dự án
 require_once '../../../config/database.php';
 
 if (isset($_POST['submit_add_category'])) {

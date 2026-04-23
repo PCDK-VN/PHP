@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-// Lùi 2 cấp để lấy file kết nối Database
+// Lùi 3 cấp để lấy file kết nối Database
 require_once '../../../config/database.php';
 
 if (isset($_POST['submit_add_order'])) {
