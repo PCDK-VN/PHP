@@ -9,8 +9,8 @@ if (!isset($_SESSION['admin_id'])) {
     exit();
 }
 
-// 2. Gọi file cấu hình
-require_once '../config/database.php';
+// 2. Gọi shared DB include
+require_once __DIR__ . '/_db_include.php';
 require_once 'includes/icons.php';
 
 // Lưu ý: Mình đã xóa phần fix cứng $_SESSION['admin_name'] = 'Khoa'

@@ -3,7 +3,7 @@
 session_start();
 
 // Nhúng file kết nối CSDL của Khoa.
-// Chú ý: Vì file này nằm ở modules/product/ nên phải lùi 2 cấp (../../) để tìm thư mục config
+// Chú ý: Vì file này nằm ở modules/products/ nên phải lùi 3 cấp (../../../) để tìm thư mục assets
 require_once '../../../config/database.php';
 
 // Kiểm tra xem user có bấm nút Submit không
@@ -25,7 +25,7 @@ if (isset($_POST['submit_add_product'])) {
     if (isset($_FILES['thumbnail']) && $_FILES['thumbnail']['error'] === UPLOAD_ERR_OK) {
 
         // Thư mục lưu ảnh (Khoa nhớ tạo thư mục này trong project nhé: assets/uploads/products)
-        $upload_dir = '../../assets/uploads/products/';
+        $upload_dir = '../../../assets/uploads/products/';
 
         // Đổi tên file cho khỏi trùng (Ví dụ: 1700000000_cpu.jpg)
         $file_name = time() . '_' . basename($_FILES['thumbnail']['name']);

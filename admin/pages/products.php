@@ -159,7 +159,7 @@ $end_item = min($offset + $limit, $total_products);
                             <a href="?view=product_edit&id=<?= $row['id'] ?>" class="btn-icon" title="Sửa">
                                 <?= get_admin_icon('edit') ?>
                             </a>
-                            <a href="modules/product/delete.php?id=<?= $row['id'] ?>" class="btn-icon text-danger" title="Xóa" onclick="return confirm('Bạn có chắc chắn muốn xóa sản phẩm này không?')">
+                            <a href="modules/products/delete.php?id=<?= $row['id'] ?>" class="btn-icon text-danger" title="Xóa" onclick="return confirm('Bạn có chắc chắn muốn xóa sản phẩm này không?')">
                                 <?= get_admin_icon('trash') ?>
                             </a>
                         </div>

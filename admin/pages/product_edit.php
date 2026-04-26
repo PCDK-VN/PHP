@@ -25,7 +25,7 @@ if (!$product) {
 </div>
 
 <div class="table-container" style="padding: 24px; background: white; border-radius: 12px;">
-    <form action="modules/product/edit.php" method="POST" enctype="multipart/form-data">
+    <form action="modules/products/edit.php" method="POST" enctype="multipart/form-data">
         <input type="hidden" name="id" value="<?= $product['id'] ?>">
 
         <input type="hidden" name="old_thumbnail" value="<?= $product['thumbnail'] ?>">

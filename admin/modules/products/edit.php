@@ -20,7 +20,7 @@ if (isset($_POST['submit_edit_product'])) {
 
     // Nếu người dùng có chọn upload ảnh MỚI thì xử lý lưu ảnh
     if (isset($_FILES['thumbnail']) && $_FILES['thumbnail']['error'] === UPLOAD_ERR_OK) {
-        $upload_dir = '../../assets/uploads/products/';
+        $upload_dir = '../../../assets/uploads/products/';
         $file_name = time() . '_' . basename($_FILES['thumbnail']['name']);
         $target_file = $upload_dir . $file_name;
 
